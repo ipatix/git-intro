@@ -61,7 +61,7 @@ Git repository on another service.
 
 ```{toctree}
 :maxdepth: 1
-:caption: Getting started
+:caption: (Day 1) Getting started
 
 motivation
 configuration
@@ -69,7 +69,7 @@ configuration
 
 ```{toctree}
 :maxdepth: 1
-:caption: Modifying an existing project
+:caption: (Day 1) Modifying an existing project
 
 browsing
 commits
@@ -79,26 +79,27 @@ local-workflow
 
 ```{toctree}
 :maxdepth: 1
-:caption: Studying an existing project
+:caption: (Day 1) Studying an existing project
 
 archaeology
 ```
 
 ```{toctree}
 :maxdepth: 1
-:caption: Sharing your work
+:caption: (Day 1) Sharing your work
 
 sharing
 ```
 
 ```{toctree}
 :maxdepth: 1
-:caption: Finding the balance
+:caption: (Day 1) Finding the balance
 
 level
 what-to-avoid
 ```
 
+<!--
 ```{toctree}
 :maxdepth: 1
 :caption: Older episodes
@@ -107,16 +108,35 @@ basics
 branches
 conflicts
 ```
+-->
 
 ```{toctree}
 :maxdepth: 1
-:caption: Optional episodes
+:caption: (Day 1) Optional episodes
 
 staging-area
 recovering
 interrupted
 aliases
 under-the-hood
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: (Day 2) Core lesson
+
+concepts.md
+same-repository.md
+code-review.md
+forking-workflow.md
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: (Day 2) Optional episodes
+
+hooks.md
+bare-repos.md
 ```
 
 ```{toctree}
@@ -128,7 +148,8 @@ reference
 customizing
 resources
 exercises
-guide
+guide-1
+guide-2
 PDF version <https://coderefinery.github.io/git-intro/lesson.pdf>
 ```
 
