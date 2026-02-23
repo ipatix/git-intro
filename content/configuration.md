@@ -6,7 +6,6 @@ We have a longer version of this in the [installation
 instructions](https://coderefinery.github.io/installation/git-in-terminal/).
 But for clarity, we will review the most important parts here.
 
-You don't need to set these if you work only through the GitHub web interface.
 If you use VS Code or other editors or integrated development environments,
 the editor might prompt you to set these up.
 
@@ -44,8 +43,9 @@ registration or identity requirement.
 ## Default branch name
 
 The default branch name in Git has been `master` for a long time, but it is
-changing to `main` in many places.  We recommend to set it to `main` for new
-repositories that you create locally:
+changing to `main` in many places. When you create a local repository you may
+be notified that you should set a default name. We recommend to set it to `main`
+for new repositories that you create locally:
 ```console
 $ git config --global init.defaultbranch main
 ```
@@ -60,6 +60,12 @@ $ git config --global alias.graph "log --all --graph --decorate --oneline"
 ```
 
 We have an own section about aliases: {ref}`aliases`.
+
+```{note}
+A more flexible option for command line, which also allows browsing, is [tig](https://jonas.github.io/tig/).
+It is a separate tool and needs to be installed separately.
+However, we won't use it for this tutorial.
+```
 
 
 ## Default text editor for commit messages
@@ -81,19 +87,20 @@ to set other editors, or do a web search for "git set editor to
 % This anchor used for linking from other lessons
 (clone-method)=
 
-## Authenticating to GitHub: SSH or HTTPS or VS Code?
+## Authenticating to GitHub: SSH or VS Code?
 
 **How does GitHub know who you are?** We discuss here three options:
 - **SSH** is the classic method, using [Secure Shell
   Protocol](https://en.wikipedia.org/wiki/Secure_Shell) remote connection
   keys.
-- **HTTPS** works with the **Git Credential Manager**, which is an
-  extra add-on that works easily in Windows and Mac.
 - **VS Code** editor can authenticate with GitHub using its own
   authentication method.
 
 Read how to install them from the [installation
 instructions](https://coderefinery.github.io/installation/ssh/).
+In contrast to the original CodeRefinery lesson, we do not recommend to
+use HTTPS authentication. Many 3rd party hosted services
+(e.g. your institutes) GitLab may not support HTTPS.
 
 Test which one you should use:
 
@@ -115,21 +122,6 @@ Test which one you should use:
     From now on, **if you know that SSH works, you should always select
     SSH as the clone URL from GitHub, or translate the URL to start with
     the right thing yourself:** `git@github.com:` (with the `:`).
-  ::::
-
-  ::::{group-tab} Command line: HTTPS
-    Try this command:
-    ```console
-    $ git config --get credential.helper
-    ```
-
-    If this shows something, then the credential manager is probably
-    configured and HTTPS cloning will work (but you can't verify it until
-    you try using it).
-
-    From now on, **if you know that HTTPS works, you should always select
-    HTTPS as the clone URL from GitHub, or translate the URL to start with
-    the right thing yourself:** `https://github.com/`
   ::::
 
   ::::{group-tab} VS Code

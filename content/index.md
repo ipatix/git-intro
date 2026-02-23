@@ -1,12 +1,9 @@
 # Introduction to version control with Git - Why we want to track versions and how to go back in time to a working version
 
-:::{admonition} We rewrote this lesson in February and March 2024
-If you are looking for the previous version, you can browse the
-[2023 version of this lesson](https://coderefinery.github.io/git-intro/branch/2023-version/).
-:::
-
 This is the introductory lesson to version control using
 [Git](https://git-scm.com/).
+It is based on the Git introduction from the
+[CodeRefinery workshop from September/October 2025](https://coderefinery.github.io/2025-09-09-workshop/).
 
 We start with an **existing repository on the web** to visually explain the basic
 concepts of version control. We later move to a local
@@ -24,17 +21,36 @@ The goals of the module as a whole are that the learner will feel comfortable
 about committing changes, branching, and merging.
 
 :::{prereq}
-We offer several options to go through the material: **on the web, in an editor,
+We offer several options to go through the material: **in an editor,
 or in the terminal**.
-Please see the [installation instructions](https://coderefinery.github.io/installation/).
-If you wish to follow in the terminal and are new to the command line, we
-recorded a [short shell crash course](https://youtu.be/xbTTDLA3txI).
+CodeRefinery has summarized the [installation instructions](https://coderefinery.github.io/installation/).
+However, please be noted that they do not fully apply to our lesson.
+What you will need is the following:
+
+- [GitHub Account](https://coderefinery.github.io/installation/github/#github)
+- [SSH connection to GitHub](https://coderefinery.github.io/installation/ssh/#ssh). We do not recommend HTTPS.
+- Either [Visual Studio Code](https://code.visualstudio.com/download) or
+  [any editor of your choice](https://coderefinery.github.io/installation/editors/#editors).
+- If you choose to use Windows without Visual Studio Code, we suggest to use
+  the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install)
+  as an improved command line environment.
+
+Basic knowledge of the command line is a prerequisite to this course. You
+usually won't need it for Visual Studio Code, but having basic knowledge will
+still be helpful.
+
+If you wish to follow in the terminal and are new to the command line, a
+[short shell crash course](https://youtu.be/xbTTDLA3txI) is available.
+Another introduction suited for beginners is the Linux class from the
+[FSI Informatik](https://video.cs.fau.de/by-lecture/Linux/2024s/) (German only,
+3h long!).
 
 We recommend to have a [GitHub](https://github.com) account.
 **Why GitHub?**
 Also [GitLab](https://gitlab.com) and [Bitbucket](https://bitbucket.org) would
 allow similar workflows and basically everything that we will discuss is
-transferable. With this material and these exercises we do not implicitly
+transferable. E.g. GitLab is quite common as a private instance for research
+insitutes. With this material and these exercises we do not implicitly
 endorse the company [GitHub](https://github.com). We have chosen to demonstrate
 a number of concepts using examples with [GitHub](https://github.com) because
 it is currently the most popular web platform for hosting Git repositories and
@@ -120,7 +136,7 @@ PDF version <https://coderefinery.github.io/git-intro/lesson.pdf>
 :maxdepth: 1
 :caption: About
 
-All lessons <https://coderefinery.org/lessons/core/>
+All CodeRefinery lessons <https://coderefinery.org/lessons/core/>
 CodeRefinery <https://coderefinery.org/>
 Reusing <https://coderefinery.org/lessons/reusing/>
 ```

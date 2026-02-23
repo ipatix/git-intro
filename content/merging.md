@@ -367,42 +367,6 @@ $ git log --oneline
 :::::
 
 
-### (7) Contribute to the original repository with a pull request
-
-Remember, this is an advanced step.  If you do this, you are donating
-a recipe to everyone.
-
-:::::{tabs}
-::::{group-tab} GitHub
-Now that you know how to create branches and opening a pull request, try to
-open a new pull request with a new change but this time the base repository
-should be the upstream one.
-
-In other words, you now send a pull request across repositories: from your fork
-to the original repository.
-
-Another thing that is different now is that you might not have permissions to
-merge the pull request.  We can then together review and browse the pull
-request.
-::::
-
-::::{group-tab} VS Code
-Not described. We will return to this in the [collaborative Git
-lesson](https://coderefinery.github.io/git-collaborative/).
-
-You would create a new branch locally like above, {term}`push` it to GitHub to your own user's repository `USER/recipe-book`, then go to GitHub and open a pull request *to* `cr-workshop-exercises/recipe-book`.  Or you do it all through VS Code.
-::::
-
-::::{group-tab} Command line
-Not described. We will return to this in the [collaborative Git
-lesson](https://coderefinery.github.io/git-collaborative/).
-
-You would create a new branch locally like above, {term}`push` it to GitHub to your own user's repository `USER/recipe-book`, then go to GitHub and open a pull request *to* `cr-workshop-exercises/recipe-book`.
-
-::::
-:::::
-
-
 ## Resolving a conflict (demonstration)
 
 A conflict is when Git asks humans to decide during a merge which of two
