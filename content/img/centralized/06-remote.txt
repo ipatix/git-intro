@@ -1,0 +1,8 @@
+             [main]
+              |
+      c1------m1
+        \    /
+         \  /
+          b1
+          |
+          [yourname-somefeature]

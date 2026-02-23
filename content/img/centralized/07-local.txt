@@ -1,0 +1,8 @@
+             [origin/main]
+              |
+      c1------m1
+        \    /|
+         \  / [main,HEAD]
+          b1
+          |
+          [yourname-somefeature]

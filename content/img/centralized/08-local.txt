@@ -1,0 +1,10 @@
+         [origin/main]
+          |
+          d1---c3*
+         /     |
+        /     [main,HEAD]
+c1----c2
+        \
+         b1
+         |
+        [origin/experiment]

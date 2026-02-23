@@ -1,0 +1,9 @@
+     [main]
+      |
+      c1
+      | \
+      |  b1
+      |  |
+      |  [yourname-somefeature,HEAD]
+      |
+      [origin/main]
