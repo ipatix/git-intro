@@ -43,7 +43,7 @@ If you wish to follow in the terminal and are new to the command line, a
 [short shell crash course](https://youtu.be/xbTTDLA3txI) is available.
 Another introduction suited for beginners is the Linux class from the
 [FSI Informatik](https://video.cs.fau.de/by-lecture/Linux/2024s/) (German only,
-3h long!).
+2h long!).
 
 We recommend to have a [GitHub](https://github.com) account.
 **Why GitHub?**
