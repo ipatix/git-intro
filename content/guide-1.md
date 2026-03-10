@@ -52,8 +52,8 @@ Times here are in CE(S)T.
 - 09:50 - 10:30 (40 min) [Committing changes](https://coderefinery.github.io/git-intro/commits/)
 - 10:30 - 10:40 (10 min) Break
 - 10:40 - 11:25 (45 min) [Merging changes and contributing to the project](https://coderefinery.github.io/git-intro/merging/)
-- 11:25 - 11:45 (15 min) Demonstrating conflict resolution, Q&A
-- 11:45 - 11:50 (5 min) Break
+- 11:25 - 11:40 (15 min) Demonstrating conflict resolution, Q&A
+- 11:40 - 11:50 (10 min) Break
 - 11:50 - 12:25 (35 min) [Cloning a Git repository and working locally](https://coderefinery.github.io/git-intro/local-workflow/)
 - 12:25 - 13:00 (35 min) [Inspecting history](https://coderefinery.github.io/git-intro/archaeology/)
 
