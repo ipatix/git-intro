@@ -21,9 +21,9 @@ previous episode.
 - If you create the commits locally: [Being able to authenticate to GitHub](https://coderefinery.github.io/installation/ssh/)
 
 **What is familiar** from previous episodes:
-- Creating a branch ([previous lesson](https://coderefinery.github.io/git-intro/commits/))
-- Committing a change on the new branch ([previous lesson](https://coderefinery.github.io/git-intro/commits/))
-- Opening and merging pull requests ([previous lesson](https://coderefinery.github.io/git-intro/merging/))
+- Creating a branch ([previous lesson](https://ipatix.github.io/git-intro/commits/))
+- Committing a change on the new branch ([previous lesson](https://ipatix.github.io/git-intro/commits/))
+- Opening and merging pull requests ([previous lesson](https://ipatix.github.io/git-intro/merging/))
 
 **What will be new** in this exercise:
 - As a reviewer, we will learn how to ask for changes in a pull request.

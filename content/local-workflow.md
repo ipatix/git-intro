@@ -7,7 +7,7 @@ do, so now we move to working on your own computer.
 :::{objectives}
 - We are able to clone a repository from the web and modify it locally.
 - We can do the same things we did before (commit, branch, merge), but **locally**.
-- We get a feeling for remote repositories ([more later](https://coderefinery.github.io/git-collaborative/)).
+- We get a feeling for remote repositories ([more later](https://ipatix.github.io/git-intro/)).
 :::
 
 :::{instructor-note}

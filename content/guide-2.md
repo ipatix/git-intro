@@ -5,24 +5,24 @@
 
 Times here are in CE(S)T.
 
-- 08:50 - 09:00 (10 min) Soft start and icebreaker question
+- 08:50 - 09:00 (10 min) Soft start
 
-- 09:00 - 09:45 (45 min) [How to turn your project to a Git repo and share it](https://coderefinery.github.io/git-intro/sharing/)
-- 09:45 - 10:00 (15 min) [Practical advise](https://coderefinery.github.io/git-intro/level/), Q&A, feedback, and what will we be doing tomorrow?
+- 09:00 - 09:45 (45 min) [How to turn your project to a Git repo and share it](https://ipatix.github.io/git-intro/sharing/)
+- 09:45 - 10:00 (15 min) [Practical advise](https://ipatix.github.io/git-intro/level/), Q&A, feedback, and what will we be doing tomorrow?
 - 10:00 - 10:15 (15 min) Recap Git, any HedgeDoc questions to highlight
-- 10:15 - 10:25 (10 min) [Concepts around collaboration](https://coderefinery.github.io/git-collaborative/concepts/)
+- 10:15 - 10:25 (10 min) [Concepts around collaboration](https://ipatix.github.io/git-intro/concepts/)
     - Explain terms: Pull, push, clone, fork. Focus on pull and not fetch.
     - Focus more on clone and less on generating from templates and importing.
 - 10:25 - 10:35 (10 min) Break
-- 10:35 - 11:05 (30 min) [Collaborating within the same repository](https://coderefinery.github.io/git-collaborative/same-repository/)
+- 10:35 - 11:05 (30 min) [Collaborating within the same repository](https://ipatix.github.io/git-intro/same-repository/)
   - Exercise (incl preparation)
-- 11:05 - 11:20 (15 min) [Collaborating within the same repository](https://coderefinery.github.io/git-collaborative/same-repository/)
+- 11:05 - 11:20 (15 min) [Collaborating within the same repository](https://ipatix.github.io/git-intro/same-repository/)
   - Demo and Q/A
-- 11:20 - 11:50 (30 min) [Practicing code review](https://coderefinery.github.io/git-collaborative/code-review/)
+- 11:20 - 11:50 (30 min) [Practicing code review](https://ipatix.github.io/git-intro/code-review/)
 - 11:50 - 12:00 (10 min) Break
-- 12:00 - 12:45 (45 min) [Distributed version control and forking workflow](https://coderefinery.github.io/git-collaborative/distributed/)
+- 12:00 - 12:45 (45 min) [Distributed version control and forking workflow](https://ipatix.github.io/git-intro/distributed/)
     - Concepts and what are exercise outcomes
-    - [Exercise](https://coderefinery.github.io/git-collaborative/distributed/#exercise-preparation)
+    - [Exercise](https://ipatix.github.io/git-intro/distributed/#exercise-preparation)
 - 12:45 - 13:00 (15 min) Discussion, demonstration, Q&A, feedback
 
 
@@ -124,7 +124,7 @@ What you should do before the exercise starts:
 
 In order to collaborate efficiently using Git, it's essential to have a solid
 understanding of how remotes work, and how to contribute changes through pull
-requests or merge requests. The [git-intro lesson](https://coderefinery.github.io/git-intro/)
+requests or merge requests. The [git-intro lesson](https://ipatix.github.io/git-intro/)
 teaches participants how to
 work efficiently with Git when there is only one developer (more precisely: how
 to work when there are no remote Git repositories yet in the picture). This

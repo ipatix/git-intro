@@ -309,7 +309,7 @@ Same as command line
 In this exercise we have pushed our local repository to a remote
 repository.  You can learn how to work with remote repositories in
 detail in the [collaborative distributed version
-control](https://coderefinery.github.io/git-collaborative/) lesson.  
+control](https://coderefinery.github.io/git-intro/) lesson.  
 
 To store your Git data on another server, you use **remotes**.  A
 remote is a repository on its own, with its own branches. We can

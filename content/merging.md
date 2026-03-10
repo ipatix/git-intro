@@ -34,7 +34,7 @@ In this exercise, we will show how we can **propose changes** and **merge
 changes** within our own repository. Optionally, you can propose a recipe to
 the {term}`upstream` recipe book - which shows the true purpose of this.  But
 this is only a preview and we will practice collaboration much more in the
-[collaborative Git lesson](https://coderefinery.github.io/git-collaborative/).
+[collaborative Git lesson](https://ipatix.github.io/git-intro/).
 
 
 :::{figure} img/illustrations/merging.png
@@ -374,7 +374,7 @@ changes to keep if the same portion of a file has been changed in two different
 ways on two different branches.
 
 We will practice conflict resolution in the [collaborative Git
-lesson](https://coderefinery.github.io/git-collaborative/).
+lesson](https://ipatix.github.io/git-intro/).
 
 Here we will only demonstrate how to create a conflict and how to resolve it,
 all on GitHub.  Once we understand how this works, we will be more confident to
@@ -398,7 +398,7 @@ How to resolve conflicts:
 
 How to avoid conflicts:
 - We will talk about it in the [collaborative Git
-  lesson](https://coderefinery.github.io/git-collaborative/).
+  lesson](https://ipatix.github.io/git-intro/).
 
 
 ## Summary

@@ -239,7 +239,7 @@ the other branch. But sometimes we run this command on the wrong branch.
 
 Pulling changes with
 `git pull` can create a conflict since `git pull` always also includes a `git merge` (more about this
-in the [collaborative Git lesson](https://coderefinery.github.io/git-collaborative/)).
+in the [collaborative Git lesson](https://ipatix.github.io/git-intro/)).
 
 The recovery is same as described in {ref}`conflict-resolution`. Either
 resolve conflicts or abort the merge with `git merge --abort`.

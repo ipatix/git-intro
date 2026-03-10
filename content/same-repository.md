@@ -102,10 +102,10 @@ contribute.
 - If you create the commits locally: [Being able to authenticate to GitHub](https://coderefinery.github.io/installation/ssh/)
 
 **What is familiar** from the previous workshop days (not repeated here):
-- Cloning a repository ([previous lesson](https://coderefinery.github.io/git-intro/local-workflow/))
-- Creating a branch ([previous lesson](https://coderefinery.github.io/git-intro/commits/))
-- Committing a change on the new branch ([previous lesson](https://coderefinery.github.io/git-intro/commits/))
-- Submit a pull request towards the main branch ([previous lesson](https://coderefinery.github.io/git-intro/merging/))
+- Cloning a repository ([previous lesson](https://ipatix.github.io/git-intro/local-workflow/))
+- Creating a branch ([previous lesson](https://ipatix.github.io/git-intro/commits/))
+- Committing a change on the new branch ([previous lesson](https://ipatix.github.io/git-intro/commits/))
+- Submit a pull request towards the main branch ([previous lesson](https://ipatix.github.io/git-intro/merging/))
 
 **What will be new** in this exercise:
 - If you create the changes locally, you will need to **push** them to the remote repository.
@@ -263,7 +263,7 @@ $ git remote set-url origin NEWADDRESS
 ### (5) Open a pull request towards the main branch
 
 This is done through the GitHub web interface.  We saw this
-in a [previous lesson](https://coderefinery.github.io/git-intro/merging/).
+in a [previous lesson](https://ipatix.github.io/git-intro/merging/).
 
 
 ### (6) Reviewing pull requests

@@ -91,7 +91,7 @@ But remember: it is better to make any commit, than no commit. Especially in sma
 **Projects with few persons: changes are reviewed by others**
 - You create new feature branches for changes.
 - Changes are reviewed before they are merged to the `main` branch
-  (more about that in the [collaborative Git lesson](https://coderefinery.github.io/git-collaborative/)).
+  (more about that in the [collaborative Git lesson](https://ipatix.github.io/git-intro/)).
 - Consider to write-protect the `main` branch so that it can only be changed
   with pull requests or merge requests.
 

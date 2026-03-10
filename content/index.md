@@ -11,8 +11,7 @@ repository. Our goal there is not only to be able to apply changes to an
 existing repository but to also be able to turn own projects into Git
 repositories and to share them with others.
 
-In the separate [collaborative Git
-lesson](https://coderefinery.github.io/git-collaborative/), we focus more on
+In the separate, we focus more on
 the collaboration and the use of remote repositories. We try to stick to simple
 workflows, just enough for researchers who are not obsessed with Git to be able
 to work well.
@@ -86,32 +85,6 @@ archaeology
 
 ```{toctree}
 :maxdepth: 1
-:caption: (Day 1) Sharing your work
-
-sharing
-```
-
-```{toctree}
-:maxdepth: 1
-:caption: (Day 1) Finding the balance
-
-level
-what-to-avoid
-```
-
-<!--
-```{toctree}
-:maxdepth: 1
-:caption: Older episodes
-
-basics
-branches
-conflicts
-```
--->
-
-```{toctree}
-:maxdepth: 1
 :caption: (Day 1) Optional episodes
 
 staging-area
@@ -119,6 +92,21 @@ recovering
 interrupted
 aliases
 under-the-hood
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: (Day 2) Sharing your work
+
+sharing
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: (Day 2) Finding the balance
+
+level
+what-to-avoid
 ```
 
 ```{toctree}
@@ -150,7 +138,7 @@ resources
 exercises
 guide-1
 guide-2
-PDF version <https://coderefinery.github.io/git-intro/lesson.pdf>
+PDF version <https://ipatix.github.io/git-intro/lesson.pdf>
 ```
 
 ```{toctree}

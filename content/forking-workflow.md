@@ -57,10 +57,10 @@ accept modifications without having to grant write access to others.
 - If you create the commits locally: [Being able to authenticate to GitHub](https://coderefinery.github.io/installation/ssh/)
 
 **What is familiar** from the previous episodes:
-- Forking a repository ([previous lesson](https://coderefinery.github.io/git-intro/browsing/))
-- Creating a branch ([previous lesson](https://coderefinery.github.io/git-intro/commits/))
-- Committing a change on the new branch ([previous lesson](https://coderefinery.github.io/git-intro/commits/))
-- Opening and merging pull requests ([previous lesson](https://coderefinery.github.io/git-intro/merging/))
+- Forking a repository ([previous lesson](https://ipatix.github.io/git-intro/browsing/))
+- Creating a branch ([previous lesson](https://ipatix.github.io/git-intro/commits/))
+- Committing a change on the new branch ([previous lesson](https://ipatix.github.io/git-intro/commits/))
+- Opening and merging pull requests ([previous lesson](https://ipatix.github.io/git-intro/merging/))
 
 **What will be new** in this exercise:
 - Opening a pull request towards the upstream repository.
