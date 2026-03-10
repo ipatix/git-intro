@@ -1,4 +1,4 @@
-# Instructor guide
+# Instructor guide (Day 1)
 
 
 ## Exercise preparation
@@ -45,44 +45,17 @@ Times here are in CE(S)T.
 
 - 08:50 - 09:00 (10 min) Soft start and icebreaker question
 
-- 09:00 - 09:20 (20 min) Welcome and practical information
-- 09:20 - 09:25 (05 min) [Intro to day](https://coderefinery.github.io/git-intro/)
-- 09:25 - 09:35 (10 min) [Motivation](https://coderefinery.github.io/git-intro/motivation/)
-- 09:35 - 10:05 (30 min) [Copy and browse an existing project](https://coderefinery.github.io/git-intro/browsing/)
-
-- 10:05 - 10:15 (10 min) Break
-
-- 10:15 - 11:00 (45 min) [Committing changes](https://coderefinery.github.io/git-intro/commits/)
-
-- 11:00 - 12:00 (60 min) Break
-
-- 12:00 - 12:50 (50 min) Recap + [Merging changes and contributing to the project](https://coderefinery.github.io/git-intro/merging/)
-
-- 12:50 - 13:00 (10 min) Break
-
-- 13:00 - 13:30 (30 min) Demonstrating conflict resolution, Q&A, feedback, and what will we be doing tomorrow?
-
-
-## Schedule Day 2
-
-Times here are in CE(S)T.
-
-- 08:50 - 09:00 (10 min) Soft start and icebreaker question
-
-- 09:00 - 09:10 (10 min) Recap
-- 09:10 - 10:00 (50 min) [Cloning a Git repository and working locally](https://coderefinery.github.io/git-intro/local-workflow/)
-
-- 10:00 - 10:10 (10 min) Break
-
-- 10:10 - 11:00 (50 min) [Inspecting history](https://coderefinery.github.io/git-intro/archaeology/)
-
-- 11:00 - 12:00 (60 min) Break
-
-- 12:00 - 12:50 (50 min) [How to turn your project to a Git repo and share it](https://coderefinery.github.io/git-intro/sharing/)
-
-- 12:50 - 13:00 (10 min) Break
-
-- 13:00 - 13:30 (30 min) [Practical advise](https://coderefinery.github.io/git-intro/level/), Q&A, feedback, and what will we be doing tomorrow?
+- 09:00 - 09:10 (10 min) Welcome and practical information
+- 09:10 - 09:15 (05 min) [Intro to day](https://coderefinery.github.io/git-intro/)
+- 09:15 - 09:25 (10 min) [Motivation](https://coderefinery.github.io/git-intro/motivation/)
+- 09:25 - 09:50 (25 min) [Copy and browse an existing project](https://coderefinery.github.io/git-intro/browsing/)
+- 09:50 - 10:30 (40 min) [Committing changes](https://coderefinery.github.io/git-intro/commits/)
+- 10:30 - 10:40 (10 min) Break
+- 10:40 - 11:25 (45 min) [Merging changes and contributing to the project](https://coderefinery.github.io/git-intro/merging/)
+- 11:25 - 11:45 (15 min) Demonstrating conflict resolution, Q&A
+- 11:45 - 11:50 (5 min) Break
+- 11:50 - 12:25 (35 min) [Cloning a Git repository and working locally](https://coderefinery.github.io/git-intro/local-workflow/)
+- 12:25 - 13:00 (35 min) [Inspecting history](https://coderefinery.github.io/git-intro/archaeology/)
 
 
 ## Why we teach this lesson
