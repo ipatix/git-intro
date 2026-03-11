@@ -322,9 +322,7 @@ $ git grep -i salt       # case insensitive
 
 ### (6) Who modified each line last and when?
 
-This is called the "annotate" or "blame" view. The name "blame"
-is very unfortunate, but it is the standard term for historical reasons
-for this functionality and it is not meant to blame anyone.
+This is called the "annotate" or "blame" view.
 
 :::::{tabs}
 

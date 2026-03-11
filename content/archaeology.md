@@ -157,22 +157,22 @@ some error message printed.
 
 ### Line-by-line code annotation with metadata
 
-With `git annotate` you can see line by line who and **when** the line was
+With `git blame` you can see line by line who and **when** the line was
 modified last. It also prints the precise hash of the last change which
 modified each line. Incredibly useful for reproducibility.
 
 :::::{tabs}
   ::::{group-tab} Command line
     ```console
-    $ git annotate FILE
+    $ git blame FILE
     ```
 
     Example:
     ```console
-    $ git annotate networkx/convert_matrix.py
+    $ git blame networkx/convert_matrix.py
     ```
 
-    If you annotate in a terminal and the file is longer than the screen, Git by default uses the program `less` to
+    If you blame in a terminal and the file is longer than the screen, Git by default uses the program `less` to
     scroll the output.
     Use `/sometext` `<ENTER>` to find "sometext" and you can cycle through the results with `n` (next) and `N` (last).
     You can also use page up/down to scroll. You can quit with `q`.
@@ -367,9 +367,9 @@ modified each line. Incredibly useful for reproducibility.
            ```console
            $ git grep -n "Logic error in degree_correlation"
            ```
-        2. We use `git annotate`:
+        2. We use `git blame`:
            ```console
-           $ git annotate networkx/algorithms/threshold.py
+           $ git blame networkx/algorithms/threshold.py
            ```
            Then search for "Logic error" by typing "/Logic error" followed by Enter.
            The last commit that modified it was `90544b4fa` (unless that line changed since).
@@ -521,6 +521,6 @@ This only works with the command line.
 
 ## Summary
 
-- git log/grep/annotate/show/bisect is a powerful combination when doing archaeology in a project on the command line.
+- git log/grep/blame/show/bisect is a powerful combination when doing archaeology in a project on the command line.
 - `git switch --create NAME HASH` is the recommended mechanism to inspect old code on the command line.
 - Most of these commands can be used in the GitHub web interface (except `git bisect`).
