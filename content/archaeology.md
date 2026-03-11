@@ -35,15 +35,6 @@ Later we will practice these in an archaeology exercise (below).
 :::
 
 
-### Warm-up: ["Git History" browser](https://githistory.xyz/)
-
-As a warm-up we can try the ["Git History" browser](https://githistory.xyz/)
-on the README.rst file of the [networkx](https://github.com/networkx/networkx) repository:
-
-- Visit and browse <https://github.githistory.xyz/networkx/networkx/blob/main/README.rst> (use left/right keys).
-- You can try this on some of your GitHub repositories, too!
-
-
 ### Searching text patterns in the repository
 
 With `git grep` you can find all lines in a repository which contain some string or regular expression.
