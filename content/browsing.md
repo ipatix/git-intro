@@ -1,4 +1,4 @@
-# Copy and browse an existing project
+# Forking ("copy") and browsing an existing project
 
 In this episode, we will look at an **existing repository** to
 understand how all the pieces work together. Along the way, we will make a copy
@@ -22,7 +22,7 @@ own changes in the next episode.
 :::
 
 
-## GitHub, VS Code, Command line, and more
+## GitHub, VS Code, and Command line
 
 We offer **three different paths** for this exercise:
 - **GitHub** (this is the one we will demonstrate)

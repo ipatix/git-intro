@@ -54,7 +54,7 @@ Times here are in CE(S)T.
 - 10:40 - 11:25 (45 min) [Merging changes and contributing to the project](https://ipatix.github.io/git-intro/merging/)
 - 11:25 - 11:40 (15 min) Demonstrating conflict resolution, Q&A
 - 11:40 - 11:50 (10 min) Break
-- 11:50 - 12:25 (35 min) [Cloning a Git repository and working locally](https://ipatix.github.io/git-intro/local-workflow/)
+- 11:50 - 12:25 (35 min) ??? Section was removed
 - 12:25 - 13:00 (35 min) [Inspecting history](https://ipatix.github.io/git-intro/archaeology/)
 
 

@@ -73,7 +73,6 @@ configuration
 browsing
 commits
 merging
-local-workflow
 ```
 
 ```{toctree}

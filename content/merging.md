@@ -6,10 +6,9 @@ means that we have to somehow combine the changes later. In this part we will
 practice this: {term}`merging`.
 
 :::{objectives}
-- Understand that on GitHub merging is done through a {term}`pull request`. Think of it as a **change proposal**.
-- Create and merge a pull request within your own repository.
-- Understand (and optionally) do the same across repositories, to contribute to
-  the {term}`upstream` public repository.
+- Understand the concept of merging branches.
+- Understand how the same concept applies to a {term}`pull request`, which you can think of as a **change proposal**.
+- Understand that for **change proposals** a local merge is not always necessary.
 :::
 
 :::{instructor-note}
@@ -30,11 +29,8 @@ practice this: {term}`merging`.
 
 ## Exercise
 
-In this exercise, we will show how we can **propose changes** and **merge
-changes** within our own repository. Optionally, you can propose a recipe to
-the {term}`upstream` recipe book - which shows the true purpose of this.  But
-this is only a preview and we will practice collaboration much more in the
-[collaborative Git lesson](https://ipatix.github.io/git-intro/).
+In this exercise, we will show how we can **merge changes** within our own repository.
+We will then **propose changes** of the recipe to the {term}`upstream` recipe book - which shows the true purpose of this.
 
 
 :::{figure} img/illustrations/merging.png
@@ -45,89 +41,24 @@ Illustration of what we want to achieve in this exercise.
 :::
 
 
-We offer **three different paths** of how to do this exercise.  For
-the CodeRefinery, we use and demonstrate the **GitHub path** only.
-While the other paths have some advantages in practice, the GitHub
-path is defacto the same when contributing to other people's projects.
-The exercise text below has
-some GitHub-specific notes, but most is possibly with any path.
-
-:::::{tabs}
-::::{group-tab} GitHub
-
-First, we make something called a {term}`pull request`, which allows
-review and commenting before the actual merge.
-
-:::{exercise} Exercise: Merging branches with pull requests (20 min)
-We assume that in the previous exercise you have created a new branch
-with a recipe.  In our previous example, it is called `new-recipe`.
-If not, create the branch first and add a recipe to your new branch, see
-{doc}`commits`.
-
-We provide basic hints. You should refer to the solution as needed.
-
-1. Navigate to your branch from the previous episode
-   (hint: the same branch view we used last time).
-
-1. Begin the pull request process
-   (hint: There is a "Contribute" button in the branch view).
-
-1. Add or modify the pull request title and description, and verify the other data.
-   In the pull request verify the target repository and the target
-   branch. Make sure that you are merging within your own repository.
-   **GitHub: By default, it will offer to make the change to the
-   upstream repository, `cr-workshop-exercises`.  You should change this**, you
-   shouldn't contribute your test recipe upstream yet.  Where it says
-   `base repository`, select your own user's repository.
-
-1. Create the pull request by clicking "Create pull request". Browse
-   the network view to see if anything has changed yet.
-
-1. Merge the pull request, or if you are not on GitHub you can merge
-   the branch locally. Browse the network again. What has changed?
-
-1. Find out which branches are merged and thus safe to delete. Then remove them
-   and verify that the commits are still there, only the branch labels are
-   gone (hint: you can delete branches that have been merged into `main`).
-
-1. Optional: Try to create a new branch with a new change, then open a pull
-   request but towards the central repository. We will later merge few of
-   those.
-   (Hint: this is mostly the same as above, for the GitHub path.  But,
-   you set the base repository as CodeRefinery.  You might need to
-   compare across forks.)
-:::
-::::
-
-::::{group-tab} Local (VS Code, Command line)
-
-When working locally, it's easier to merge branches: we can just do
-the merge, without making a pull request.  But we don't have that step
-of review and commenting and possibly adjusting.
+For the first part we offer **two different paths** of how to do this exercise.
+These cover merging branches in your local repository.
+The second part will only cover GitHub, since it is mandatory for proposing changes
+to someone elses repository.
 
 :::{exercise}
 
 1. Switch to the `main` branch that you want to merge the *other*
-   branch into. (Note that this is the other way around from the
-   GitHub path).
+   branch (`new-recipe`) into.
 
-Then:
+2. Merge `new-recipe` branch into `main` (which is then your current branch).
 
-5. Merge the other branch into `main` (which is then your current branch).
-
-6. Find out which branches are merged and thus safe to delete. Then remove them
+3. Find out which branches are merged and thus safe to delete. Then remove them
    and verify that the commits are still there, only the branch labels are
    gone. (Hint: you can delete branches that have been merged into `main`).
 
-7. (optional, advanced) Try to create a new branch, and make a
-   GitHub pull request with your recipe, and contribute it to our
-   upstream repository.  *This is very complex right now since your
-   change has to get to GitHub, and we haven't shown that yet.  We
-   don't give a solution for this.*
+4. Synchronize local changes to your repository on GitHub
 :::
-
-::::
-:::::
 
 The solution below goes over most of the answers, and you are
 encouraged to use it when the hints aren't enough - this is by design.
@@ -135,147 +66,32 @@ encouraged to use it when the hints aren't enough - this is by design.
 
 ## Solution and walk-through
 
-### (1) Navigate to your branch
+### Local Merging
+
+#### (1) Navigate to your branch
 
 Before making the pull request, or doing a merge, it's important to
 make sure that you are on the right branch.  Many people have been
 frustrated because they forgot this!
 
 :::::{tabs}
-::::{group-tab} GitHub
-On GitHub make sure you are on the branch you want to merge **from**:
-   :::{figure} img/merging/github-navigate-to-branch.png
-   :alt: Screenshot on GitHub where we navigate to the branch we wish to merge.
-   :width: 80%
-   :class: with-border
-   :::
-::::
-
 ::::{group-tab} VS Code
 Remember, you need to switch to the `main` branch, the branch we want to merge **to**.
-This is different from the GitHub path.
 ::::
 
 ::::{group-tab} Command line
 Remember, you need to switch to the `main` branch, the branch we want to merge **to**.
-This is different from the GitHub path:
 ```console
 $ git switch main
 ```
 ::::
 :::::
 
-
-(create-pull-request)=
-
-### (2) Begin the pull request process
-
-In GitHub, the pull request is the way we propose to merge two
-branches together.  We start the process of making one.
-
-:::::{tabs}
-::::{group-tab} GitHub
-   :::{figure} img/merging/github-contribute.png
-   :alt: Screenshot on GitHub where we get to the pull request process.
-   :width: 80%
-   :class: with-border
-   :::
-::::
-
-::::{group-tab} VS Code
-It is possible to open pull requests from the editor, but 
-we don't cover that here.
-
-If you are working locally, continue to step 5.
-::::
-
-::::{group-tab} Command line
-It is possible to open pull requests from the command line, but 
-we don't cover that here.
-
-If you are working locally, continue to step 5.
-::::
-:::::
-
-
-### (3) Fill out and verify the pull request
-
-Check that the pull request is directed to the right repository and branch
-and that it contains the changes that you meant to merge.
-
-:::::{tabs}
-::::{group-tab} GitHub
-Things to check:
-- Base repository: this should be your own
-- Title: make it descriptive
-- Description: make it informative
-- Scroll down to see commits: are these the ones you want to merge?
-- Scroll down to see the changes: are these the ones you want to merge?
-   :::{figure} img/merging/github-comparing-changes.png
-   :alt: Screenshot on GitHub where we verify the changes we want to merge.
-   :width: 80%
-   :class: with-border
-
-   This screenshot only shows the top part. If you scroll down, you
-   can see the commits and the changes. We recommend to do this before
-   clicking on "Create pull request".
-   :::
-::::
-
-::::{group-tab} VS Code
-If you are working locally, continue to step 5.
-::::
-
-::::{group-tab} Command line
-If you are working locally, continue to step 5.
-::::
-:::::
-
-
-### (4) Create the pull request
-
-We actually create the pull request.  Don't forget to navigate to the Network
-view after opening the pull request.  Note that the changes proposed in the
-pull request are not yet merged.
-
-:::::{tabs}
-::::{group-tab} GitHub
-Click on the green button "Create pull request".
-
-If you click on the little arrow next to "Create pull request", you can also
-see the option to "Create draft pull request". This will be interesting later
-when collaborating with others. It allows you to open a pull request that is
-not ready to be merged yet, but you want to show it to others and get feedback.
-::::
-
-::::{group-tab} VS Code
-It is possible to create pull requests from the editor, but 
-we don't cover that here.
-
-If you are working locally, continue to step 5.
-::::
-
-::::{group-tab} Command line
-It is possible to create pull requests from the command line, but 
-we don't cover that here.
-
-If you are working locally, continue to step 5.
-::::
-:::::
-
-
-### (5) Merge the pull request
+#### (2) Merge the other branch
 
 Now, we do the actual merging. We see some effects now.
 
 :::::{tabs}
-::::{group-tab} GitHub
-Review it again (commits and changes), and then click "Merge pull request".
-
-After merging, verify the network view. Also navigate then to your "main"
-branch and check that your new recipe is there.
-::::
-
 ::::{group-tab} VS Code
 Just like with the command line, when we merge we modify our *current* branch.  Verify you are on the `main` branch.
 
@@ -309,7 +125,7 @@ $ git merge new-recipe
 :::::
 
 
-### (6) Delete merged branches
+#### (3) Delete merged branches
 
 Before deleting branches, first check whether they are merged.
 
@@ -318,30 +134,6 @@ that were on that branch. If you delete a merged branch, the commits are now
 also part of the branch where we have merged to.
 
 :::::{tabs}
-::::{group-tab} GitHub
-One way to delete the branch is to click on the "Delete branch" button after the pull
-request is merged:
-   :::{figure} img/merging/github-merged.png
-   :alt: Screenshot on GitHub suggesting us to delete a branch after it has been merged.
-   :width: 80%
-   :class: with-border
-   :::
-
-But what if we forgot? Then navigate to the branch view:
-   :::{figure} img/merging/github-branches.png
-   :alt: Screenshot on GitHub where we navigate to the branches view.
-   :width: 80%
-   :class: with-border
-   :::
-
-In the overview we can see that it has been merged and we can delete it:
-   :::{figure} img/merging/github-branches-overview.png
-   :alt: Screenshot on GitHub where we see an overview of branches and can delete them.
-   :width: 100%
-   :class: with-border
-   :::
-::::
-
 ::::{group-tab} VS Code
 From the Source Control sidebar → the three dots (as before) → Branch → Delete Branch.  Select the branch name to delete.
 ::::
@@ -368,6 +160,97 @@ $ git log --oneline
 ::::
 :::::
 
+#### (4) Synchronize local change to GitHub
+
+In order to prepare your work for contribution, you need to somehow get your
+latest version to GitHub.
+
+:::::{tabs}
+::::{group-tab} VS Code
+We can synchronize our changes back to GitHub by **pushing** them.
+:::{figure} img/merging/vscode-pushing.png
+:alt: VSCode screenshot as described
+:width: 80%
+:class: with-border
+::::
+::::
+::::{group-tab} Command Line
+We can synchronize our changes back to GitHub by **pushing** them.
+```console
+$ git push
+```
+::::
+:::::
+
+### Remote merging ("pull request")
+
+Now that our changes are available on GitHub, we can consider to contribute our changes.
+In order to contribute to the upstream, we make something called a {term}`pull request`.
+This will also allow review and commenting before the actual merge.
+
+:::{exercise} Exercise: Merging branches with pull requests (10 min)
+We assume that in the previous exercise you have created a new branch
+with a recipe.  In our previous example, it is called `new-recipe`.
+If not, create the branch first and add a recipe to your new branch, see
+{doc}`commits`.
+
+We provide basic hints. You should refer to the solution as needed.
+
+5. Begin the pull request process
+   (hint: There is a "Contribute" button in the branch view).
+
+6. Add or modify the pull request title and description, and verify the other data.
+   In the pull request verify the target repository and the target
+   branch. Make sure that you are merging your main branch from your repository
+   to the main branch from the upstream repository.
+
+7. Create the pull request by clicking "Create pull request". Browse
+   the network view to see if anything has changed yet.
+:::
+
+#### (5) Begin the pull request process
+
+(create-pull-request)=
+
+:::{figure} img/merging/github-contribute.png
+:alt: Screenshot on GitHub where we get to the pull request process.
+:width: 80%
+:class: with-border
+:::
+
+#### (6) Fill out and verify the pull request
+
+Check that the pull request is directed to the right repository and branch
+and that it contains the changes that you meant to merge.
+
+Things to check:
+- Base: this should be main branch of `ipatix/recipe-book`
+- Compare: this should be your branch (e.g. main branch) from `USER/recipe-book`
+- Title: make it descriptive
+- Description: make it informative
+- Scroll down to see commits: are these the ones you want to merge?
+- Scroll down to see the changes: are these the ones you want to merge?
+   :::{figure} img/merging/github-comparing-changes.png
+   :alt: Screenshot on GitHub where we verify the changes we want to merge.
+   :width: 80%
+   :class: with-border
+
+   This screenshot only shows the top part. If you scroll down, you
+   can see the commits and the changes. We recommend to do this before
+   clicking on "Create pull request".
+   :::
+
+#### (7) Create the pull request
+
+We actually create the pull request. Note that the changes proposed in the
+pull request are not yet merged.
+
+Click on the green button "Create pull request".
+
+If you click on the little arrow next to "Create pull request", you can also
+see the option to "Create draft pull request". This will be interesting later
+when collaborating with others. It allows you to open a pull request that is
+not ready to be merged yet, but you want to show it to others and get feedback.
 
 ## Resolving a conflict (demonstration)
 
