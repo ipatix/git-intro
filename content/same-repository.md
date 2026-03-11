@@ -56,7 +56,7 @@ contribute.
   ---
   If you have not yet requested access, could you please [open an
   issue in this
-  repository](https://github.com/cr-workshop-exercises/access-requests/issues/new/choose).
+  repository](https://github.com/ipatix/access-requests/issues/new/choose).
   Wait a
   minute for staff to add you, then wait for the invite email to arrive and
   accept the invitation from the email and "unwatch" repositories (below).
@@ -65,10 +65,10 @@ contribute.
   **Choose only one to work with** (you must have requested access already, see above)
 
   - Not recorded:
-    <https://github.com/cr-workshop-exercises/centralized-workflow-exercise>
+    <https://github.com/ipatix/centralized-workflow-exercise>
     (this will not be shown on stream or recorded in our videos, but is public
     on the internet until it is deleted)
-  - Recorded: <https://github.com/cr-workshop-exercises/centralized-workflow-exercise-recorded> (this will be shown on stream and recorded, **your username and comments may appear in the recorded video on YouTube**)
+  - Recorded: <https://github.com/ipatix/centralized-workflow-exercise-recorded> (this will be shown on stream and recorded, **your username and comments may appear in the recorded video on YouTube**)
   ::::
 :::::
 

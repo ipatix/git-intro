@@ -50,7 +50,7 @@ We offer **two different paths** of how to do this exercise.
 
 :::{exercise} Exercise: Practice creating commits and branches (20 min)
 1. Make sure that you now work **on your fork** of the recipe-book
-   repository (`USER/recipe-book`, *not* `cr-workshop-exercises/recipe-book`)
+   repository (`USER/recipe-book`, *not* `ipatix/recipe-book`)
 1. Clone the repository to your computer
 1. First create a new branch and then add a recipe to the branch and commit the change.
 1. In a new commit, modify the recipe you just added.

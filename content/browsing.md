@@ -50,9 +50,9 @@ First, we need to make **our own copy** of the exercise repository. This will
 become important later, when we make our own changes.
 
 1. Go to the repository view on GitHub:
-   - <https://github.com/cr-workshop-exercises/recipe-book>: you can use this one if you don't want your fork and contributions
+   - <https://github.com/ipatix/recipe-book>: you can use this one if you don't want your fork and contributions
      to be visible on the stream or the recording
-   - <https://github.com/cr-workshop-exercises/recipe-book-recorded>: we will use this one for the demonstration which is streamed and recorded
+   - <https://github.com/ipatix/recipe-book-recorded>: we will use this one for the demonstration which is streamed and recorded
 1. First, on GitHub, click the button that says "Fork".  It is towards
    the top-right of the screen:
    :::{figure} img/browsing/forking.png
@@ -66,7 +66,7 @@ become important later, when we make our own changes.
 At all times you should be aware of if you are looking at *your* repository
 or the *CodeRefinery {term}`upstream`* repository.
 * Your repository: https://github.com/**USER**/recipe-book
-* CodeRefinery upstream repository: https://github.com/**cr-workshop-exercises**/recipe-book
+* CodeRefinery upstream repository: https://github.com/**ipatix**/recipe-book
 
 :::::{tabs}
 ::::{group-tab} GitHub
@@ -369,8 +369,8 @@ $ git blame sides/guacamole.md
 ### (8) Browse issues and pull requests in the {term}`upstream` repository
 
 This can only be done through the GitHub view.  Go to the main
-repository **cr-workshop-exercises/recipe-book**, (not your fork):
-<https://github.com/cr-workshop-exercises/recipe-book>.  {term}`Issues <issue>`
+repository **ipatix/recipe-book**, (not your fork):
+<https://github.com/ipatix/recipe-book>.  {term}`Issues <issue>`
 and {term}`Pull requests <pull request>` are different for each GitHub
 copy.
 

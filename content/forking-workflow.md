@@ -34,11 +34,11 @@ accept modifications without having to grant write access to others.
   We create(d) these the day before hopefully.  **Choose only one to
   work with**:
   - Not recorded:
-    <https://github.com/cr-workshop-exercises/forking-workflow-exercise> (this
+    <https://github.com/ipatix/forking-workflow-exercise> (this
     will not be shown on stream or recorded in our videos, but is be public on
     the internet until it is deleted)
   - Recorded:
-    <https://github.com/cr-workshop-exercises/forking-workflow-exercise-recorded>
+    <https://github.com/ipatix/forking-workflow-exercise-recorded>
     (this will be shown on stream and recorded, **your username and comments
     may appear in the recorded video on YouTube**)
 
@@ -99,7 +99,7 @@ and the repository exists.
 
 Or like this one:
 ```text
-failed to push some refs to cr-workshop-exercises/forking-workflow-exercise.git
+failed to push some refs to ipatix/forking-workflow-exercise.git
 ```
 
 In this case you probably try to push the changes not to your fork but to the original repository
@@ -124,8 +124,8 @@ It should **not** look like this:
 ```console
 $ git remote --verbose
 
-origin	git@github.com:cr-workshop-exercises/forking-workflow-exercise.git (fetch)
-origin	git@github.com:cr-workshop-exercises/forking-workflow-exercise.git (push)
+origin	git@github.com:ipatix/forking-workflow-exercise.git (fetch)
+origin	git@github.com:ipatix/forking-workflow-exercise.git (push)
 ```
 
 In this case you can adjust "origin" to point to your fork with:
