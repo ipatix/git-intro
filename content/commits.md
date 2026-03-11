@@ -51,6 +51,7 @@ We offer **two different paths** of how to do this exercise.
 :::{exercise} Exercise: Practice creating commits and branches (20 min)
 1. Make sure that you now work **on your fork** of the recipe-book
    repository (`USER/recipe-book`, *not* `cr-workshop-exercises/recipe-book`)
+1. Clone the repository to your computer
 1. First create a new branch and then add a recipe to the branch and commit the change.
 1. In a new commit, modify the recipe you just added.
 1. Switch to the `main` branch and modify a recipe there.
@@ -70,7 +71,10 @@ design.
 ## Solution and walk-through
 
 
-### (1) Make sure you are on your fork
+### (1) Clone the repository to your computer
+
+If you haven't done so already in the previous chapter, clone the repository.
+Make sure you have forked the recipe-book and you use your fork when cloning.
 
 :::{figure} img/commits/fork.png
 :alt: Screenshot on GitHub where we verify that we are on our fork.
@@ -81,6 +85,39 @@ You want to see your username in the URL and you want to see the "forked from
 ..." part.
 :::
 
+:::::{tabs}
+::::{group-tab} VS Code
+You need to have forked the repository as described above.
+
+We need to start by making a copy of this repository locally.
+
+1. Start VS Code.
+1. If you don't have the default view (you already have a project
+open), go to File → New Window.
+1. Under "Start" on the screen, select "Clone Git Repository...". Alternatively
+   navigate to the "Source Control" tab on the left sidebar and click on the "Clone Repository" button.
+1. Paste in this URL: `git@github.com:USER/recipe-book`, where
+   `USER` is your username.  You can copy this from the browser.
+1. Browse and select the folder in which you want to clone the
+   repository.
+1. Say yes, you want to open this repository.
+1. Select "Yes, I trust the authors" (the other option works too).
+::::
+
+::::{group-tab} Command line
+We need to start by making a copy of this repository locally.  You
+need to have forked the repository as described above.
+
+1. Start the terminal in which you use Git (terminal application, WSL, etc.).
+1. Change to the directory where you would want the repository to be
+   (`cd ~/code` for example, if the `~/code` directory is where you
+   store your files).
+1. Run the following command: `git clone
+   git@github.com:USER/recipe-book`, where `USER` is your
+   username.
+1. Change to that directory: `cd recipe-book`
+::::
+:::::
 
 ### (2) Create a branch and add a recipe to the branch
 
@@ -108,29 +145,6 @@ name of the thing you make.  A commit is identified by something such as
 `554c187`.
 
 :::::{tabs}
-::::{group-tab} GitHub
-1. Where it says "main" at the top left, click, enter a new branch
-   name `new-recipe`, click on the offer to create the new branch
-   ("Create branch new-recipe from main").
-   :::{figure} img/commits/github-create-branch.png
-   :alt: Screenshot on GitHub where we create a new branch.
-   :width: 60%
-   :class: with-border
-   :::
-1. Change to some sub-directory, for example `sides`.
-1. Make sure you are still on the `new-recipe` branch (it should say
-   it at the top), and click "Add file" → "Create new file" from the
-   upper right.
-1. Enter a filename where it says "Name your file...", with a `.md` at
-   the end.  Example: `mixed-nuts.md`.
-1. Enter the recipe.  You can use the template above.
-1. Click "Commit changes"
-1. Enter a commit message. Then click "Commit
-   changes".
-
-You should appear back at the file browser view, and see your new
-recipe there.
-::::
 
 ::::{group-tab} VS Code
 1. Make sure that you are on the main branch.
@@ -176,14 +190,6 @@ $ git commit -m "Add mixed nuts recipe"
 ### (3) Modify the recipe with a new commit
 
 :::::{tabs}
-::::{group-tab} GitHub
-This is similar to before, but we click on the existing file to
-modify.
-
-1. Click on your new recipe, for example `mixed-nuts.md`.
-2. Click the edit button, the pencil icon at top-right.
-3. Follow the "Commit changes" instructions as in the previous step.
-::::
 
 ::::{group-tab} VS Code
 Repeat as in the previous step.
@@ -205,14 +211,6 @@ message.
 ### (4) Switch to the main branch and modify a recipe there
 
 :::::{tabs}
-::::{group-tab} GitHub
-1. Go back to the main repository page (your user's page).
-1. In the branch switch view (top left above the file view), switch to
-   `main`.
-1. Modify another recipe that already exists, following the pattern
-   from above. Don't modify the one you just created (but it shouldn't
-   even be visible on the `main` branch).
-::::
 
 ::::{group-tab} VS Code
 Use the branch selector at the bottom to switch back to the main branch.  Repeat the same steps as above.
@@ -246,9 +244,6 @@ have diverged: both have some modifications. Try to find the commits
 you created.
 
 :::::{tabs}
-::::{group-tab} GitHub
-Insights tab → Network view (just like we have done before).
-::::
 
 ::::{group-tab} VS Code
 This requires an extension.  Opening the VS Code terminal lets you use the command line method.
@@ -314,17 +309,9 @@ emphasize-lines: 1-3
 
 ### (6) Compare the branches
 
-Comparing changes is an important thing we need to do.  When using the
-GitHub view only, this may not be so common, but we'll show it so that
-it makes sense later on.
+Comparing changes is a useful thing we can do.
 
 :::::{tabs}
-
-::::{group-tab} GitHub
-A nice way to compare braches is to add `/compare` to the URL of the repository,
-for example (replace USER):
-`https://github.com/USER/recipe-book/compare`
-::::
 
 ::::{group-tab} VS Code
 This seems to require an extension.  We recommend you use the command line method.
@@ -351,16 +338,9 @@ $ git diff --name-only main new-recipe
 ### (7) Compare two arbitrary commits
 
 This is similar to above, but not only between branches.
+`git diff` in fact works with anything that indentifies specific versions (e.g. also tags).
 
 :::::{tabs}
-::::{group-tab} GitHub
-Following the `/compare`-trick above, one can compare commits on GitHub by
-adjusting the following URL:
-`https://github.com/USER/recipe-book/compare/VERSION1..VERSION2`
-
-Replace `USER` with your username and `VERSION1` and `VERSION2` with a commit hash or branch name.
-Please try it out.
-::::
 
 ::::{group-tab} VS Code
 Again, we recommend using the Command Line method.
@@ -380,11 +360,6 @@ Then try to compare any two commit identifiers with `git diff`.
 ### (8) Renaming a branch
 
 :::::{tabs}
-::::{group-tab} GitHub
-
-Branch button → View all branches → three dots at right side → Rename branch.
-
-::::
 ::::{group-tab} VS Code
 Version control sidebar → Three dots (same as in step 2) → Branch → Rename branch.  Make sure you are on the right branch before you start.
 ::::

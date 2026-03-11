@@ -85,7 +85,7 @@ We need to start by making a copy of this repository locally.
 open), go to File → New Window.
 1. Under "Start" on the screen, select "Clone Git Repository...". Alternatively
    navigate to the "Source Control" tab on the left sidebar and click on the "Clone Repository" button.
-1. Paste in this URL: `https://github.com/USER/recipe-book`, where
+1. Paste in this URL: `git@github.com:USER/recipe-book`, where
    `USER` is your username.  You can copy this from the browser.
 1. Browse and select the folder in which you want to clone the
    repository.
@@ -94,22 +94,16 @@ open), go to File → New Window.
 ::::
 
 ::::{group-tab} Command line
-**This path is advanced and we do not include all command line
-information: you need to be somewhat
-comfortable with the command line already.**
-
 We need to start by making a copy of this repository locally.  You
 need to have forked the repository as described above.
 
-1. Start the terminal in which you use Git (terminal application, or
-   Git Bash).
+1. Start the terminal in which you use Git (terminal application, WSL, etc.).
 1. Change to the directory where you would want the repository to be
    (`cd ~/code` for example, if the `~/code` directory is where you
    store your files).
 1. Run the following command: `git clone
-   https://github.com/USER/recipe-book`, where `USER` is your
-   username.  You might need to use a SSH clone command instead of
-   HTTPS, depending on your setup.
+   git@github.com:USER/recipe-book`, where `USER` is your
+   username.
 1. Change to that directory: `cd recipe-book`
 ::::
 

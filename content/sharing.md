@@ -266,7 +266,7 @@ There are services that can be a remote:
 ## Is putting software on GitHub/GitLab/... publishing?
 
 It is a good first step but to make your code truly **findable and
-accessible**, consider making your code **citable and persistent**: Get a
+accessible**. If you are publishing in the sense of scientific work, consider making your code **citable and persistent**: Get a
 persistent identifier (PID) such as DOI in addition to sharing the code
 publicly, by using services like [Zenodo](https://zenodo.org) or similar
 services.
