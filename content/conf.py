@@ -100,7 +100,7 @@ if os.environ.get("GITHUB_REF", "") == "refs/heads/main":
     html_js_files = [
         (
             "https://plausible.cs.aalto.fi/js/script.js",
-            {"data-domain": "coderefinery.github.io", "defer": "defer"},
+            {"data-domain": "ipatix.github.io", "defer": "defer"},
         ),
     ]
 
