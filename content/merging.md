@@ -46,8 +46,10 @@ Illustration of what we want to achieve in this exercise.
 
 
 We offer **three different paths** of how to do this exercise.  For
-the CodeRefinery workshop day 1, we use and demonstrate the **GitHub
-path** only and recommend you do that.  The exercise text below has
+the CodeRefinery, we use and demonstrate the **GitHub path** only.
+While the other paths have some advantages in practice, the GitHub
+path is defacto the same when contributing to other people's projects.
+The exercise text below has
 some GitHub-specific notes, but most is possibly with any path.
 
 :::::{tabs}
@@ -373,11 +375,10 @@ A conflict is when Git asks humans to decide during a merge which of two
 changes to keep if the same portion of a file has been changed in two different
 ways on two different branches.
 
-We will practice conflict resolution in the [collaborative Git
-lesson](https://ipatix.github.io/git-intro/).
-
-Here we will only demonstrate how to create a conflict and how to resolve it,
-all on GitHub.  Once we understand how this works, we will be more confident to
+Here we will only demonstrate how to create a conflict and how to resolve it.
+While we demonstrate the resolution on GitHub, this workflow is not recommended in practice,
+since you cannot always verify that your merged changes are correct (e.g. software runs correctly).
+Once we understand how this works, we will be more confident to
 resolve conflicts also in the command line.
 
 How to create a conflict (please try this in your own time *and just watch now*):
@@ -395,11 +396,6 @@ How to resolve conflicts:
 - Sometimes a conflict is between your change and somebody else's change. In
   that case, you might have to discuss with the other person which changes to
   keep.
-
-How to avoid conflicts:
-- We will talk about it in the [collaborative Git
-  lesson](https://ipatix.github.io/git-intro/).
-
 
 ## Summary
 

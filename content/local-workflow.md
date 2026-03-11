@@ -141,18 +141,6 @@ If you are asked whether you want to open the cloned repository or to add it to 
 select "Open".
 ::::::
 
-::::::{group-tab} RStudio
-(This pathway is in draft stage: we don't have screenshots yet.)
-
-You can clone a repository via File → New Project → Version Control →
-Git.
-
-Enter the repository URL: see "command line" instructions for hints
-here.  RStudio, like most things, uses regular Git in the background
-so all the same command line choices apply: see part (1).  We'd
-recommend SSH if possible.
-::::::
-
 :::::::
 
 
@@ -183,26 +171,6 @@ $ git switch --create another-recipe
 :alt: VS Code screenshot of create branch
 
 Creating a new branch in VS Code.
-::::
-
-::::{group-tab} RStudio
-The main way to control git is via the Git tab in the right side
-panel: it's a tab along with "Environment", "History", etc.  This will
-be called the "Git tab".
-
-From the git tab, branches are controlled on the right side of the
-icon bar.  The purple button allows creating branches and the drop-down next to it allows switching.  If you select "Sync branch with remote", it will push that branch (with no commits on it) to the remote immediately.
-
-
-```{figure} img/commits/rstudio-create-branch.png
-:width: 80%
-:class: with-border
-:alt: RStudio screenshot of create branch
-
-Creating a branch in RStudio
-```
-
-
 ::::
 
 
@@ -238,28 +206,6 @@ Committing a new file in VS Code.
 :::
 ::::
 
-::::{group-tab} RStudio
-
-1. One creates the file in the normal way,
-1. In the git tab, one uses the checkbox under "Staged" to add mark the file as {term}`staged <staging area>`, which means it will be committed next.
-1. Click the check-mark to commit.  A new window will be opened.
-
-:::{figure} img/commits/rstudio-committing.png
-:alt: Screenshot of RStudio commit process
-:width: 80%
-:class: with-border
-
-Staging and committing file in RStudio.
-:::
-
-The commit message corresponds to what you would see on the command line (we haven't learned these diff commands yet, but are mentioned in {doc}`staging-area`):
-
-:::{figure} img/commits/rstudio-commit-message.png
-:alt: Screenshot of RStudio commit message entry
-:width: 80%
-:class: with-border
-::::
-
 
 :::::
 
@@ -289,12 +235,6 @@ Repeat the same steps as above.
 :alt: VS Code screenshot
 
 Switching branch via selector at bottom.
-::::
-
-::::{group-tab} RStudio
-Switch to the `main` branch again, via the branch switcher right next to the "create new branch" button (see step (3)).
-
-Commit like before.
 ::::
 
 
@@ -336,10 +276,6 @@ Just like with the command line, when we merge we modify our *current* branch.  
 :class: with-border
 ::::
 
-::::{group-tab} RStudio
-It doesn't seem theer is a graphical way to do this.  Luckily, like usual, via the Terminal you can use the "Command line" method.
-::::
-
 :::::
 
 
@@ -374,19 +310,6 @@ This requires an extension.  Opening the VS Code terminal lets you use the comma
 :alt: VS Code screenshot as described
 
 View → Terminal will open a terminal at bottom.  This is a normal command line interface and very useful for work.  (Note the git-aware prompt that shows the current branch.  This requires other setup.)
-::::
-
-::::{group-tab} RStudio
-You can find a graph view in RStudio, but it doesn't seem you can compare arbitrary commits without an extension.  Luckily, the command line method works, as usual.
-
-1. From the git tab,
-1. Select the clock icon to go to "History" view
-1. Select "(all branches)" to see full graph (equivalent of `--all` in the command line)
-
-:::{figure} img/commits/rstudio-graph-view.png
-:class: with-border
-:width: 80%
-:alt: RStudio screenshot as described
 ::::
 
 Compare this with the graph on GitHub: Insights tab → Network view (just like
@@ -457,10 +380,6 @@ Source Control button on left sidebar → Three dots in upper right of source co
 "Create Branch From ...".
 
 Then select the remote branch you want to create a local branch from.
-::::
-
-::::{group-tab} RStudio
-The branch picker also lists branches on remotes.  If you click on of them, it will create a local branch and track it.
 ::::
 
 :::::

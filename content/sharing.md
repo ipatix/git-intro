@@ -35,50 +35,13 @@ From a bunch of files to a local repository which we then share on GitHub.
 2. Turn this new directory into a Git repository.
 3. Share this repository on GitHub (or GitLab, since it really works the same).
 
-We offer **three different paths** of how to do this exercise.
-* Via **GitHub web interface**: easy and can be a good starting point if you are completely
-  new to Git.
+We offer **two different paths** of how to do this exercise.
 * **VS Code** is quite easy, since VS Code can offer to create the
   GitHub repositories for you.
 * **Command line**: you need to create the
   repository on GitHub and link it yourself.
 
 ::::{tabs}
-
-:::{group-tab} Only using GitHub
-### Create an repository on GitHub
-
-First log into GitHub, then follow the screenshots and descriptions below.
-```{figure} img/sharing/new-repository.png
-:alt: Screenshot on GitHub before a new repository form is opened
-:width: 60%
-:class: with-border
-
-Click on the "plus" symbol on top right, then on "New repository".
-```
-
-Then:
-```{figure} img/sharing/create-repository-with-readme.png
-:alt: Screenshot on GitHub just before a new repository is created
-:width: 100%
-:class: with-border
-
-Choose a repository name, add a short description, and in this case **make sure to check** "Add a
-README file". Finally "Create repository".
-```
-
-
-### Upload your files
-
-Now that the repository is created, you can upload your files:
-```{figure} img/sharing/upload-files.png
-:alt: Screenshot on GitHub just before uploading files
-:width: 100%
-:class: with-border
-
-Click on the "+" symbol and then on "Upload files".
-```
-:::
 
 :::{group-tab} VS Code
 In VS Code it only takes few clicks.
@@ -269,36 +232,6 @@ online!
   - Note that this is a powerful but also possibly dangerous option but here it
     helps us. If it's a brand new repo, it probably is fine to do this. For real
     repositories, don't do this unless you are very sure what is happening.
-:::
-
-:::{group-tab} RStudio
-
-This is not fully explained, because a lot of it is similar to the "Command
-line" method (and an RStudio expert could help us some).  The main differences
-are:
-
-### Put your project under version control
-
-1. Tools → Version control → Project setup → Version control system = Git.
-1. Select "Yes" for "do you want to initialize a new git repository for this project.
-1. Select yes to restart the project with RStudio.
-1. Switch to branch `main` to have you branch named that.
-
-### Create an <u>empty</u> repository on GitHub
-
-Same as command line
-
-### Push an existing repository from your computer to GitHub
-
-1. Under the "Create new branch" button → "Add Remote"
-1. Remote name: `origin`
-1. Remote URL: as in command line (remember to select SSH or HTTPS as you have configured your RStudio)
-1. The "Push" (up arrow) button will send changes on your current branch to the remote.  The "Pull" (down arrow) will get changes from the remote.
-
-### Troubleshooting
-
-Same as command line
-
 :::
 ::::
 :::::

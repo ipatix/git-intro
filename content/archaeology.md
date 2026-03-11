@@ -98,12 +98,6 @@ some error message printed.
 	Searching with the magnifying glass from the left sidebar is
 	equivalent to `git grep`.
   ::::
-
-  ::::{group-tab} RStudio
-  Edit → Find in files.
-
-  Use the command line method for more power.
-  ::::
 :::::
 
 
@@ -158,16 +152,6 @@ some error message printed.
     explorer shows changes to *that file*.  You can click on a change
 	to see the details.
   ::::
-
-  ::::{group-tab} RStudio
-  The graph view lets you select certain commits for viewing.  The search box lets you search for a certain commit by hash.
-
-  :::{figure} img/commits/rstudio-graph-view.png
-  :class: with-border
-  :width: 80%
-  :alt: RStudio screenshot as described
-  :::
-  ::::
 :::::
 
 
@@ -211,11 +195,6 @@ modified each line. Incredibly useful for reproducibility.
     It seems this needs an extension.  We'd recommend trying the
     command line method for now.
   ::::
-
-  ::::{group-tab} RStudio
-  Use the command line method (from what we can tell).
-  ::::
-
 :::::
 
 :::{discussion} Discuss how these relatively trivial changes affect the annotation
@@ -280,10 +259,6 @@ modified each line. Incredibly useful for reproducibility.
 
     Make sure you change back to the main branch when you are done.
   ::::
-
-  ::::{group-tab} RStudio
-  It seems you can only create branches from the present (at least without extensions). Use the command line method.
-  ::::
 :::::
 
 
@@ -320,12 +295,6 @@ modified each line. Incredibly useful for reproducibility.
         "File" → "New Window".
       ::::
 
-      ::::{group-tab} RStudio
-        **Warning: many of these exercise tasks aren't possible in the RStudio interface.  You can use RStudio to clone the project, but be prepared to start the terminal to do the main tasks.**
-
-        File → New Project.
-      ::::
-
     :::::
 
   - Clone this repository:
@@ -344,10 +313,6 @@ modified each line. Incredibly useful for reproducibility.
       ::::{group-tab} VS Code
         From a new VS Code window, select "Clone Git repository" and enter
         that URL.
-      ::::
-
-      ::::{group-tab} RStudio
-      From the new project window, choose Version Control → Git → and enter the URL
       ::::
 
     :::::
@@ -374,14 +339,6 @@ modified each line. Incredibly useful for reproducibility.
 
       ::::{group-tab} VS Code
         Switch to "Source Control", then the "..." menu, then "Branch", then "Create new branch from..." and select "networkx-2.6.3".
-      ::::
-
-      ::::{group-tab} RStudio
-      Use the command line method (but you don't need to `cd networkx`, the RStudio terminal starts in the right place.)  So, run this:
-      ```console
-      $ git switch --create exercise networkx-2.6.3
-      ```
-      (and if it doesn't work, check Command Line for the command for older git)
       ::::
 
     :::::

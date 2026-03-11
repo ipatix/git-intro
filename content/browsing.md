@@ -24,14 +24,10 @@ own changes in the next episode.
 
 ## GitHub, VS Code, Command line, and more
 
-We offer **four different paths** for this exercise:
-- **GitHub** (this is the one we will demonstrate on day 1)
-- **VS Code** (if you prefer to follow along using an editor; we will
-  return to this on day 2)
-- **RStudio** (if you prefer to follow along using an editor; we will
-  return to this on day 2)
-- **Command line** (for people comfortable with the command line; you
-  will see more of this on day 2)
+We offer **three different paths** for this exercise:
+- **GitHub** (this is the one we will demonstrate)
+- **VS Code** (if you prefer to follow along using an editor
+- **Command line** (for people comfortable with the command line)
 
 In the future we'll add more paths, for example Jupyter
 ([contributions welcome!](https://github.com/coderefinery/git-intro/issues/458)).
@@ -115,21 +111,6 @@ need to have forked the repository as described above.
    username.  You might need to use a SSH clone command instead of
    HTTPS, depending on your setup.
 1. Change to that directory: `cd recipe-book`
-::::
-
-::::{group-tab} RStudio
-You need to have forked the repository as described above.
-
-We need to start by making a copy of this repository locally.
-
-1. Start RStudio.
-1. Go to "File" → "New Project..." 
-1. Choose "Version Control", and then "Git"
-1. In the "Repository URL" field, paste in this URL: `https://github.com/USER/recipe-book`, where
-   `USER` is your username.  You can copy this from the browser.
-1. You can change the "Project directory name" if you want but that is not mandatory. 
-   By default, it will use the repository name from the URL.
-1. Click "Create Project" 
 ::::
 
 :::::
@@ -221,16 +202,6 @@ $ git log --oneline
 ```
 ::::
 
-::::{group-tab} RStudio
-This can be done from "History", in the top right panel of explorer. This will open a pop-up window 
-from which you can explore the history of commits.
-:::{figure} img/browsing/history_RStudio.png
-  :alt: Screenshot of RStudio of where to find the commit history
-  :width: 100%
-  :class: with-border
-  :::
-::::
-
 :::::
 
 
@@ -269,18 +240,6 @@ If not, you can use the basic command:
 $ git log --graph --oneline --decorate --all
 ```
 ::::
-
-::::{group-tab} RStudio
-This can be viewed in the same "History" tab that we just looked at. The branch network can be seen on the left of 
-the commit list, and individual commits can be clicked to see the person who committed and what changes they did.
-
-:::{figure} img/browsing/network_RStudio.png
-  :alt: Screenshot of RStudio of where to find the commit history
-  :width: 100%
-  :class: with-border
-  :::
-
-::::
 :::::
 
 
@@ -313,25 +272,6 @@ a single file:
 ```
 $ git log sides/guacamole.md
 ```
-::::
-
-::::{group-tab} RStudio
-Open the file in the main editor window, and navigate to the "Version control" menu (Git icon in the toolbar right 
-below the main menu bar), then select "Log of guacamole.md"
-:::{figure} img/browsing/file-history_RStudio_menu.png
-  :alt: Screenshot of RStudio of where to find the file history
-  :width: 100%
-  :class: with-border
-:::
-
-This will open a pop-up window showing all commits that modified the "Guacamole.md" file.
-
-:::{figure} img/browsing/file-history_RStudio_view.png
-  :alt: Screenshot of RStudio showing history of the guacamole.md file
-  :width: 100%
-  :class: with-border
-:::
-
 ::::
 
 :::::
@@ -383,18 +323,6 @@ $ git grep -i salt       # case insensitive
 ```
 ::::
 
-::::{group-tab} RStudio
-Go to Edit → Find in Files... (ctrl+shift+F) and type salt in the Find field. It will by default search for salt in 
-all files in the recipe-book directory. Press Find button at the bottom of the pop-up window. It will show all 
-occurrences in every file in a Find in Files tab in the Console panel. 
-
-:::{figure} img/browsing/search_RStudio.png
-  :alt: Screenshot of the Find in Files tab in RStudio showing all "salt" occurrences in every file
-  :width: 100%
-  :class: with-border
-  :::
-::::
-
 :::::
 
 
@@ -427,17 +355,6 @@ These two commands are similar but have slightly different output.
 $ git annotate sides/guacamole.md
 $ git blame sides/guacamole.md
 ```
-::::
-
-::::{group-tab} RStudio
-Open the file in the main editor window, and navigate to the "Version control" menu (Git icon in the toolbar right 
-below the main menu bar), then select "Blame "guacamole.md" on GitHub". This will open a GitHub page in your 
-web-browser with the same view as shown in the GitHub tab.
-:::{figure} img/browsing/annotate_RStudio.png
-  :alt: Screenshot of RStudio of where to find the file history
-  :width: 100%
-  :class: with-border
-  :::
 ::::
 
 :::::

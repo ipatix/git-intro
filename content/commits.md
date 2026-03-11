@@ -46,11 +46,7 @@ Illustration of what we want to achieve in this exercise.
 :::
 
 
-We offer **three different paths** of how to do this exercise.  For
-the CodeRefinery workshop day 1, we use and demonstrate the **GitHub
-path** only and recommend you do that
-(you can get experience with
-the other paths on day 2).
+We offer **two different paths** of how to do this exercise.
 
 :::{exercise} Exercise: Practice creating commits and branches (20 min)
 1. Make sure that you now work **on your fork** of the recipe-book
