@@ -385,19 +385,6 @@ version. They are also like a sticky note, but they don't move when new
 commits are added.
 
 :::::{tabs}
-::::{group-tab} GitHub
-Click on the branch switcher, and then on "Tags", then on "View all tags", then
-"Create a new release":
-   :::{figure} img/commits/github-create-tag.png
-   :alt: Screenshot on GitHub where we create a new tag.
-   :width: 60%
-   :class: with-border
-   :::
-
-What GitHub calls releases are actually tags in Git with additional metadata.
-For the purpose of this exercise we can use them interchangeably.
-::::
-
 ::::{group-tab} VS Code
 Version control sidebar → Three dots (same as in step 2) → Tags → Create tag.  Make sure you are on the expected commit before you do this.
 ::::
