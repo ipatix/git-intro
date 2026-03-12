@@ -173,7 +173,6 @@ We can synchronize our changes back to GitHub by **pushing** them.
 :width: 80%
 :class: with-border
 ::::
-::::
 ::::{group-tab} Command Line
 We can synchronize our changes back to GitHub by **pushing** them.
 ```console
